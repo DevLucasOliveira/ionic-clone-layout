@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HeaderPageRoutingModule } from './header-routing.module';
 
 import { HeaderPage } from './header.page';
 
@@ -13,8 +12,8 @@ import { HeaderPage } from './header.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    HeaderPageRoutingModule
   ],
-  declarations: [HeaderPage]
+  declarations: [HeaderPage],
+  exports: [HeaderPage]
 })
-export class HeaderPageModule {}
+export class HeaderPageModule { }

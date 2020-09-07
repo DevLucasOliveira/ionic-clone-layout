@@ -1,6 +1,5 @@
 <ion-content class="ion-padding" [fullscreen]="true">
-  <h1>Hi Mike,<br> Where do you want to go?</h1>
-
+  <h1 style="font: bolder;">Hi Mike,<br> Where do you want to go?</h1>
   <ion-card>
     <ion-item>
       <ion-icon color="medium" name="location"></ion-icon>
@@ -22,23 +21,95 @@
 
   <ion-card>
     <ion-img src="././assets/images/miami.jpg"></ion-img>
-    <ion-card>
-      <ion-text color="medium">2020.09.07</ion-text><br>
+    <ion-card-content>
       <ion-row class="ion-align-items-center">
-        <h5>Miami, Florida</h5>
         <ion-col>
+          <ion-text color="medium">2020.09.07</ion-text><br>
+          <h5>Miami, Florida</h5>
+        </ion-col>
+        <ion-col size="2">
           <ion-avatar>
-            <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            <img src="https://image.flaticon.com/icons/svg/168/168911.svg">
           </ion-avatar>
         </ion-col>
-        <ion-col>
+        <ion-col size="2">
           <ion-avatar>
-            <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            <img src="https://image.flaticon.com/icons/svg/168/168869.svg">
           </ion-avatar>
         </ion-col>
       </ion-row>
-    </ion-card>
+    </ion-card-content>
   </ion-card>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-row class="ion-align-items-center">
+    <ion-col size="9">
+      <b>City </b>
+      <ion-badge color="primary">Hot</ion-badge>
+    </ion-col>
+    <ion-col size="3">
+      <ion-text color="medium">More</ion-text>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row class="ion-align-items-center">
+    <ion-col>
+      <ion-card>
+        <ion-img
+          src="https://media.melhoresdestinos.com.br/2018/02/barcelona-espanha-pontos-turisticos2-e1576182573625-820x522.jpg">
+        </ion-img>
+        <ion-label>Barcelona</ion-label>
+      </ion-card>
+    </ion-col>
+    <ion-col>
+      <ion-card>
+        <ion-img
+          src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/08/turismo-barcelona-e1576182536616.jpg">
+        </ion-img>
+        <ion-label>Paris</ion-label>
+      </ion-card>
+    </ion-col>
+    <ion-col>
+      <ion-card>
+        <ion-img
+          src="https://www.melhoresdestinos.com.br/wp-content/uploads/2018/02/barcelona-espanha-pontos-turisticos4-e1519049977506.jpg">
+        </ion-img>
+        <ion-label>Roma</ion-label>
+      </ion-card>
+    </ion-col>
+  </ion-row><br>
+
+  <b>Master</b><br><br>
+  <ion-row class="ion-align-items-center">
+
+    <ion-col size="2">
+      <ion-avatar>
+        <img src="https://image.flaticon.com/icons/svg/168/168871.svg">
+      </ion-avatar>
+    </ion-col>
+    <ion-col size="2">
+      <ion-avatar>
+        <img src="https://image.flaticon.com/icons/svg/168/168902.svg">
+      </ion-avatar>
+    </ion-col>
+    <ion-col size="2">
+      <ion-avatar>
+        <img src="https://image.flaticon.com/icons/svg/168/168880.svg">
+      </ion-avatar>
+    </ion-col>
+    <ion-col size="2">
+      <ion-avatar>
+        <img src="https://image.flaticon.com/icons/svg/168/168891.svg">
+      </ion-avatar>
+    </ion-col>
+    <ion-col size="4">
+      <ion-avatar>
+        <a href="/home" style="text-decoration:none">Join them.</a>
+      </ion-avatar>
+    </ion-col>
+  </ion-row>
+
+
+
+  <app-explore-container></app-explore-container>
 </ion-content>
