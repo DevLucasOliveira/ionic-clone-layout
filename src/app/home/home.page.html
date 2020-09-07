@@ -1,58 +1,44 @@
-<ion-header>
-  <ion-row>
-    <ion-col>
-      <ion-text color="medium">10:35</ion-text>
-    </ion-col>
-    <ion-row>
-      <ion-col>
-        <ion-icon color="medium" name="cellular-outline"></ion-icon>
-      </ion-col>
-      <ion-col>
-        <ion-icon color="medium" name="wifi-outline"></ion-icon>
-      </ion-col>
-      <ion-col>
-        <ion-icon color="medium" name="battery-full-outline"></ion-icon>
-      </ion-col>
-    </ion-row>
-  </ion-row>
-</ion-header>
-
-<ion-content class="ion-padding">
-  <ion-item>
-    <h1>Hi Mike,<br> Where do you want to go?</h1>
-  </ion-item>
+<ion-content class="ion-padding" [fullscreen]="true">
+  <h1>Hi Mike,<br> Where do you want to go?</h1>
 
   <ion-card>
     <ion-item>
-      <ion-icon color="medium" name="location-outline"></ion-icon>
+      <ion-icon color="medium" name="location"></ion-icon>
       <ion-input placeholder="Input destination">
       </ion-input>
-      <ion-icon color="medium" name="arrow-forward-outline"></ion-icon>
+      <ion-icon color="medium" name="arrow-forward"></ion-icon>
     </ion-item>
   </ion-card>
 
 
+  <ion-row class="ion-align-items-center">
+    <ion-col size="9">
+      <b>Daily Scenery</b>
+    </ion-col>
+    <ion-col size="3">
+      <ion-text color="medium">More</ion-text>
+    </ion-col>
+  </ion-row>
+
   <ion-card>
     <ion-img src="././assets/images/miami.jpg"></ion-img>
-    <ion-text>2020.09.07</ion-text><br>
-    <ion-label>Miami, Florida</ion-label>
+    <ion-card>
+      <ion-text color="medium">2020.09.07</ion-text><br>
+      <ion-row class="ion-align-items-center">
+        <h5>Miami, Florida</h5>
+        <ion-col>
+          <ion-avatar>
+            <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+          </ion-avatar>
+        </ion-col>
+        <ion-col>
+          <ion-avatar>
+            <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+          </ion-avatar>
+        </ion-col>
+      </ion-row>
+    </ion-card>
   </ion-card>
 
-
+  <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>
-
-<ion-footer>
-  <ion-toolbar>
-    <ion-row>
-      <ion-col>
-        <ion-icon color="medium" name="reader-outline"></ion-icon>
-      </ion-col>
-      <ion-col>
-        <ion-icon color="medium" name="location-outline"></ion-icon>
-      </ion-col>
-      <ion-col>
-        <ion-icon color="medium" name="person-outline"></ion-icon>
-      </ion-col>
-    </ion-row>
-  </ion-toolbar>
-</ion-footer>
